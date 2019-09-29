@@ -682,14 +682,78 @@ ul.cv_db_user_nav li:last-child{margin-right: 0px;}
 }
 
 /*Animatoni Style */
+@media only screen and(max-width: 1200px) {
 
-@media (min-width: 992px) {
+	.cv_db_content_fullwidth{
+		margin: 0;
+	}
+	.cv_db_main_content{
+		position: relative;
+		transition: .3s;
+		margin-left: 250px;
+		background-color: #efefef;
+		overflow: auto;
+	}  
+
 	.animate {
 	  animation-duration: 0.3s;
 	  -webkit-animation-duration: 0.3s;
 	  animation-fill-mode: both;
 	  -webkit-animation-fill-mode: both;
 	}
+	
+
+  }
+
+
+  @media only screen and (max-width: 992px) {
+
+	.cv_db_main_content{
+		width: 767px;
+		margin-left: 0px;
+	}
+
+	.animate {
+	  animation-duration: 0.3s;
+	  -webkit-animation-duration: 0.3s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	}
+
+	
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+	.cv_db_main_content{
+		width: 575px;
+		margin-left: 0px;
+	}
+	.animate {
+	  animation-duration: 0.3s;
+	  -webkit-animation-duration: 0.3s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	}
+	
+  }
+
+
+
+  @media only screen and (max-width: 576px) {
+
+	.cv_db_main_content{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.animate {
+	  animation-duration: 0.3s;
+	  -webkit-animation-duration: 0.3s;
+	  animation-fill-mode: both;
+	  -webkit-animation-fill-mode: both;
+	}
+	
   }
   
   @keyframes cv_db_slideIn {
@@ -726,3 +790,16 @@ ul.cv_db_user_nav li:last-child{margin-right: 0px;}
 	-webkit-animation-name: slideIn;
 	animation-name: slideIn;
   }
+
+
+  .overlay {
+    display: none;
+    position: fixed;
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
