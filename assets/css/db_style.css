@@ -805,3 +805,14 @@ ul.cv_db_user_nav li:last-child{margin-right: 0px;}
     display: block;
     opacity: 1;
 }
+
+.closebtn{
+	display: none;
+	position: absolute;
+	transform: translate(200px,-11%);
+  }
+
+  .closebtn.active{
+	  cursor: pointer;
+	display: block;
+  }
