@@ -463,7 +463,7 @@
               <div class="row">
                 <div class="col">
                     <div class="cv_db_pageinfo">
-                        <h1 class="cv_db_pageinfo_title cv_db_text_white">General System Settings</h1>
+                        <h1 class="cv_db_pageinfo_title cv_db_text_white">Locations</h1>
                     </div><!-- end of cv_db_pageinfo -->
                 </div><!-- end of col -->
               </div><!-- end of row -->
@@ -472,107 +472,116 @@
 
         <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col">
-                        <div class="cv_db_setup_card card shadow">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
+              <div class="row">
+                <div class="col">
+                  <div class="cv_db_setup_card card shadow border-0">
+                    <div class="cv_db_card_header">
+                      <div class="row">
+                        <div class="col text-center">
+                            <div class="cv_db_filter">
+                              <form action="#" method="GET" class="form-inline">
+                                <label class="my-1 mr-2 control-label" for="filter-input">Filter
+                                  <a href="#" onclick="javascript:return false;" class="ml-1 text-primary" data-toggle="popover" title="" data-placement="top" data-html="true" data-content="<p><small>Available columns-</small></p><p><pre>country_name</pre></p><p><small>You can search the result in following format- </small></p>
+                                    <p><pre>column_name:value1,value2</pre></p>
+                                    <p><small>You can specify multiple values for a column</small></p>
+                                    <p><small>You can enter any term without any column name then it will be searched in all the columns</small><p>" data-original-title="Filter Help"><i class="fa fa-question-circle"></i></a></label>
+                                <input style="width:68%" id="filter-input" class="form-control my-1 mr-sm-2" type="text" name="s" value="" placeholder="Type your search here...">
+                                <button type="submit" class="btn btn-lg btn-primary">Filter</button>
+                              </form>
+                            </div><!-- end of -->
+                        </div><!-- end of col -->
 
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">On Demand Driver Fetch Radius</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="2000">
-                                                    <p class="form-text text-muted mt-2">The radius used to filter driver from the rider current position (in meter). Default is 20000m or 20 KM</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
+                        <div class="col text-center">
+                          <nav class="d-flex justify-content-center cv_db_pagination" aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                            </ul>
+                          </nav><!-- end of cv_db_pagination -->
+                        </div><!-- end of col -->
 
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Driver Minimum Withdraw Amount</label>
-                                                
-                                                <div class="col-sm-9">
-                                                    <input type="text" id="on_demand_driver_fetch_radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="Driver Minimum Withdraw Amount (in Taka)" value="5">
-                                                    <p class="form-text text-muted mt-2">The minimum amount that driver can withdraw (in Taka). Default is 500 Taka</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-        
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-        
-                                        </form><!-- end of form -->
+                        <div class="col text-right">
+                            <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add Locations</a>
+                        </div><!-- end of col -->
+                      </div><!-- end of row -->
+                    </div><!-- end of cv_db_card_header -->
 
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-                            
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
+                    <div class="table-responsive" id="cv_db_table_area">
+                      <table class="table align-items-center table-flush">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col"><a href="#">SN.</a> <i class="fa fa-sort"></i></th>
+                            <th scope="col"><a href="#">City Name</a> <i class="fa fa-sort"></i></th>
+                            <th scope="col"><a href="#">LOCATION NAME</a> <i class="fa fa-sort"></i></th>
+                            <th scope="col"><a href="#">LATITUDE</a> <i class="fa fa-sort"></i></th>
+                            <th scope="col"><a href="#">LONGITUDE</a> <i class="fa fa-sort"></i></th>
+                            <th scope="col"><a href="#">Status</a> <i class="fa fa-sort"></i></th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead><!-- end of thead -->
 
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Driver Minimum Online Limit For Trips</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="0">
-                                                    <p class="form-text text-muted mt-2">The Minimum time (in minutes) a driver has to be online for his trips to be shown</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Dhaka</td>
+                            <td>Badda</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="cv_db_badge cv_db_badge_danger">ACTIVE</span></td>
+                            <td class="text-right">
+                              <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
+                                <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
+                              </a>
+                              <form action="#" method="post" class="d-inline-block">
+                                <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
+                                <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
+                                <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
+                                </button>
+                              </form>
+                            </td>
+                          </tr><!-- end of tr -->
 
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-                                        </form><!-- end of form -->
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-                            
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
+                          <tr>
+                            <td>2</td>
+                            <td>Khulna</td>
+                            <td>Shipyard</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="cv_db_badge cv_db_badge_danger">INACTIVE</span></td>
+                            <td class="text-right">
+                              <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
+                                <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
+                              </a>
+                              <form action="#" method="post" class="d-inline-block">
+                                <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
+                                <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
+                                <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
+                                </button>
+                              </form>
+                            </td>
+                          </tr><!-- end of tr -->
 
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Reservation Wait Limit between Drop/Return</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="0">
-                                                    <p class="form-text text-muted mt-2">The Maximum time (in minutes) allowed to wait for Driver's Reservation ReturnStart after Dropping</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
+                        </tbody><!-- end of tbody -->
+                      </table><!-- end of table -->
+                    </div><!-- end of cv_db_setup_card-->
 
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-                                        </form><!-- end of form -->
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-                            
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
-
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Reservation extra Charge Per Minute</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="0">
-                                                    <p class="form-text text-muted mt-2">The Maximum time (in minutes) allowed to wait for Driver's Reservation ReturnStart after Dropping</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-                                        </form><!-- end of form -->
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-
-                        </div><!-- end of card -->
-                    </div><!-- end of col -->
-                </div><!-- end of row -->
+                    <div class="col-sm-12">
+                      <nav class="d-flex justify-content-center cv_db_pagination mb-4" aria-label="...">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                      </nav><!-- end of cv_db_pagination -->
+                    </div><!-- end of col12 -->
+                  </div><!-- end of card -->
+                </div><!-- end of col -->
+              </div><!-- end of row -->
             </div><!-- end of container-fluid -->
         </section><!-- end of cv_db_setup_general -->
 

@@ -463,7 +463,7 @@
               <div class="row">
                 <div class="col">
                     <div class="cv_db_pageinfo">
-                        <h1 class="cv_db_pageinfo_title cv_db_text_white">General System Settings</h1>
+                      <h1 class="cv_db_pageinfo_title cv_db_text_white">Dashboard Widget Setting</h1>
                     </div><!-- end of cv_db_pageinfo -->
                 </div><!-- end of col -->
               </div><!-- end of row -->
@@ -471,109 +471,219 @@
         </section><!-- end of cv_db_status_sec -->
 
         <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
-            <div class="container-fluid">
-                <div class="row">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_setup_card card shadow">
+
+                  <div class="row">
                     <div class="col">
-                        <div class="cv_db_setup_card card shadow">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
-
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">On Demand Driver Fetch Radius</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="2000">
-                                                    <p class="form-text text-muted mt-2">The radius used to filter driver from the rider current position (in meter). Default is 20000m or 20 KM</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Driver Minimum Withdraw Amount</label>
-                                                
-                                                <div class="col-sm-9">
-                                                    <input type="text" id="on_demand_driver_fetch_radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="Driver Minimum Withdraw Amount (in Taka)" value="5">
-                                                    <p class="form-text text-muted mt-2">The minimum amount that driver can withdraw (in Taka). Default is 500 Taka</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-        
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-        
-                                        </form><!-- end of form -->
-
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-                            
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
-
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Driver Minimum Online Limit For Trips</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="0">
-                                                    <p class="form-text text-muted mt-2">The Minimum time (in minutes) a driver has to be online for his trips to be shown</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-                                        </form><!-- end of form -->
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-                            
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
-
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Reservation Wait Limit between Drop/Return</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="0">
-                                                    <p class="form-text text-muted mt-2">The Maximum time (in minutes) allowed to wait for Driver's Reservation ReturnStart after Dropping</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-                                        </form><!-- end of form -->
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-                            
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <div class="cv_db_content_cardbody card-body">
-                                        <form method="post" class="cv_db_form_body">
-
-                                            <div class="form-group row focused">
-                                                <label class="col-sm-3 col-form-label form-control-label" for="on-demand-driver-fetch-radius">Reservation extra Charge Per Minute</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" name="on_demand_driver_fetch_radius" id="on-demand-driver-fetch-radius" class="cv_db_input_sm form-control form-control-alternative" placeholder="On Demand Driver Fetch Radius (in Meters)" value="0">
-                                                    <p class="form-text text-muted mt-2">The Maximum time (in minutes) allowed to wait for Driver's Reservation ReturnStart after Dropping</p>
-                                                </div><!-- end of col9 -->
-                                            </div><!-- end of form-group -->
-
-                                            <div class="text-left">
-                                                <button type="submit" class="btn btn-success mt-4">Update</button>
-                                            </div><!-- end of text-left -->
-                                        </form><!-- end of form -->
-                                    </div><!-- end of card-body -->
-                                </div><!-- end of col12 -->
-                            </div><!-- end of row -->
-
-                        </div><!-- end of card -->
+                      <div class="cv_db_card_header">
+                        <h3 class="mb-0">Dashboard Header Cards Management</h3>
+                      </div><!-- end of cv_db_card_header -->
                     </div><!-- end of col -->
-                </div><!-- end of row -->
-            </div><!-- end of container-fluid -->
+                  </div><!-- end of row -->
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="cv_db_content_cardbody cv_bd_graylight_bg card-body">
+                        <div class="cv_db_content_cardbody">
+                          <form method="post" action="#" autocomplete="off">
+                            <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="put">                            <input type="hidden" name="widget_name" value="active_header_card_widgets">
+                            <div class="pl-lg-4">
+                              <div class="form-group">
+                                <div class="row">
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-0" name="cards[]" type="checkbox" value="components.cards.total-trips">
+                                      <label for="input-card-0" class="custom-control-label">Total Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                      <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                        <input class="custom-control-input" id="input-card-1" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-payment">
+                                        <label for="input-card-1" class="custom-control-label">Total Riders Payments</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-2" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-cashback">
+                                      <label for="input-card-2" class="custom-control-label">Total cashback</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-3" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-bonus">
+                                      <label for="input-card-3" class="custom-control-label">Total Driver bonus</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-4" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                      <label for="input-card-4" class="custom-control-label">Total incentive</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-5" name="cards[]" type="checkbox" value="components.cards.total-riders">
+                                      <label for="input-card-5" class="custom-control-label">Total Riders</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-6" name="cards[]" type="checkbox" value="components.cards.total-owners">
+                                      <label for="input-card-6" class="custom-control-label">Total Owners</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-7" name="cards[]" type="checkbox" value="components.cards.total-agents">
+                                      <label for="input-card-7" class="custom-control-label">Total Agents</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-8" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-vehicles">
+                                      <label for="input-card-8" class="custom-control-label">Total Vehicles</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-9" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-drivers">
+                                      <label for="input-card-9" class="custom-control-label">Total Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-10" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-active-drivers">
+                                      <label for="input-card-10" class="custom-control-label">Total Active Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-11" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-inactive-drivers">
+                                      <label for="input-card-11" class="custom-control-label">Total Inactive Drivers</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-12" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-online-drivers">
+                                      <label for="input-card-12" class="custom-control-label">Total Online Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-13" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-offline-drivers">
+                                      <label for="input-card-13" class="custom-control-label">Total Offline Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-14" name="cards[]" type="checkbox" value="components.cards.total-completed-trips">
+                                      <label for="input-card-14" class="custom-control-label">Total completed Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-15" name="cards[]" type="checkbox" value="components.cards.total-issues-resolved">
+                                      <label for="input-card-15" class="custom-control-label">Total issues resolved</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-16" name="cards[]" type="checkbox" value="components.cards.total-accepted-trips">
+                                      <label for="input-card-16" class="custom-control-label">Total accepted Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-17" name="cards[]" type="checkbox" value="components.cards.total-rejected-trips">
+                                      <label for="input-card-17" class="custom-control-label">Total rejected Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-18" name="cards[]" type="checkbox" value="components.cards.total-failed-trips">
+                                      <label for="input-card-18" class="custom-control-label">Total failed Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-19" name="cards[]" type="checkbox" value="components.cards.total-complaints">
+                                      <label for="input-card-19" class="custom-control-label">Total complaints</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-20" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-drivers-income">
+                                      <label for="input-card-20" class="custom-control-label">Total driver income</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-21" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-agent-owner-income">
+                                      <label for="input-card-21" class="custom-control-label">Total Owner / Agent Income</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-22" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-carbangla-income">
+                                      <label for="input-card-22" class="custom-control-label">Total Carbangla Income</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-23" name="cards[]" type="checkbox" value="components.cards.total-revenue">
+                                      <label for="input-card-23" class="custom-control-label">Total Revenue</label><br>
+                                    </div><!-- end of custom-control -->
+                                </div><!-- end of row -->
+                              </div><!-- end of form-group -->
+                              
+                              <div class="text-left">
+                                <button type="submit" class="btn btn-success">Save</button>
+                              </div><!-- end of text-left -->
+                            </div><!-- end of pl-lg-4 -->
+                          </form><!-- end of form -->
+                        </div><!-- end of cv_db_content_cardbody -->
+
+                      </div><!-- end of card-body -->
+                    </div><!-- end of col12 -->
+                  </div><!-- end of row -->
+                    
+                  <div class="row">
+                    <div class="col">
+                      <div class="cv_db_card_header">
+                        <h3 class="mb-0">Dashboard Widgets Management</h3>
+                      </div><!-- end of cv_db_card_header -->
+                    </div><!-- end of col -->
+                  </div><!-- end of row -->
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="cv_db_content_cardbody cv_bd_graylight_bg card-body">
+                        <div class="cv_db_content_cardbody">
+                          <form method="post" action="#" autocomplete="off">
+                            <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="put">                            <input type="hidden" name="widget_name" value="active_header_card_widgets">
+                            <div class="pl-lg-4">
+                              <div class="form-group">
+                                <div class="row">
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-0" name="cards[]" type="checkbox" value="components.cards.total-trips">
+                                    <label for="input-card-0" class="custom-control-label">Sales chart</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-1" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-payment">
+                                    <label for="input-card-1" class="custom-control-label">Today's Trips chart</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-2" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-cashback">
+                                    <label for="input-card-2" class="custom-control-label">Income Summary</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-3" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-bonus">
+                                    <label for="input-card-3" class="custom-control-label">Users Summary</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-4" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-4" class="custom-control-label">Trips Summary</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-5" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-5" class="custom-control-label">Trips insight vehicle</label><br>
+                                  </div><!-- end of custom-control -->
+                                  
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-6" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-6" class="custom-control-label">Trips insight area</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-7" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-7" class="custom-control-label">Rider Registration</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-8" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-8" class="custom-control-label">Trip Chart</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                </div><!-- end of row -->
+                              </div><!-- end of form-group -->
+                              
+                              <div class="text-left">
+                                <button type="submit" class="btn btn-success">Save</button>
+                              </div><!-- end of text-left -->
+                            </div><!-- end of pl-lg-4 -->
+                          </form><!-- end of form -->
+                        </div><!-- end of cv_db_content_cardbody -->
+
+                      </div><!-- end of card-body -->
+                    </div><!-- end of col12 -->
+                  </div><!-- end of row -->
+                    
+                </div><!-- end of card -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
         </section><!-- end of cv_db_setup_general -->
 
         <footer class="footer cv_db_footer cv_db_sec_gap clearfix" id="footer">

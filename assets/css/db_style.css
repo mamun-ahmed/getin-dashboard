@@ -2,6 +2,7 @@
 @import url('main_style.css');
 @import url('text_color.css');
 @import url('aside_style.css');
+@import url('bg_color.css');
 
 /*Font Awesome */
 @import url('../fonts/fontawesome.min.css');
@@ -209,8 +210,7 @@ ul {
 input,
 textarea,
 button,
-input[type="button"],
-.generalBtn {
+input[type="button"]{
 	outline: none !important;
 	box-shadow: none;
 	-moz-box-sizing: border-box;
@@ -249,12 +249,12 @@ select {
 	-ms-transition: all 0.4s ease-in-out;
 	-khtml-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-	-webkit-border-radius: 2px 2px 2px 2px;
-	-moz-border-radius: 2px 2px 2px 2px;
-	-o-border-radius: 2px 2px 2px 2px;
-	-ms-border-radius: 2px 2px 2px 2px;
-	-khtml-border-radius: 2px 2px 2px 2px;
-	border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-ms-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 	font-size: 15px;
 	font-weight: 700;
 }
@@ -292,12 +292,12 @@ input[type="submit"] {
 	-ms-transition: all 0.4s ease-in-out;
 	-khtml-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-	-webkit-border-radius: 2px 2px 2px 2px;
-	-moz-border-radius: 2px 2px 2px 2px;
-	-o-border-radius: 2px 2px 2px 2px;
-	-ms-border-radius: 2px 2px 2px 2px;
-	-khtml-border-radius: 2px 2px 2px 2px;
-	border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-o-border-radius: 5px 5px 5px 5px;
+	-ms-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 }
 /* buttons */
 button,
@@ -307,16 +307,17 @@ input[type="button"]{
 	display: inline-block;
 	text-align: center;
 	border: none;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	color: #ffffff;
 }
+.btn i{font-size: 0.7rem;padding-right: 5px;}
 .btn:hover {
 	transform: translateY(-1px);
 	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 label{
 	color: #9a9a9a;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
 	font-size: 0.8em;
 	cursor: pointer;
 }
@@ -346,14 +347,10 @@ input[type="radio"] + label:after,
 	transition: all 0.4s ease-in-out;
 	content: '';
 	font-family: 'FontAwesome';
-	color: #0195df;
+	color: #ffffff;
 	display: inline-block;
 	float: left;
-	width: 15px;
-	height: 15px;
 	line-height: 15px;
-	border: 1px solid #0195df;
-	background-color: #ffffff;
 	text-align: center;
 	font-size: 100%;
 	z-index: 100;
@@ -501,10 +498,11 @@ hr,
 	background-color: #0195df;
 	color: #ffffff;
 }
-
+.mt-5{margin-top: -6rem!important;}
 /*Section Start*/
 .cv_db_sec_gap{padding: 50px 0;}
 .cv_db_sec_gap_btm{padding-bottom: 50px;}
+.cv_db_sec_gap10{padding: 10rem 0;}
 
 /*Header Start*/
 .header{
@@ -552,7 +550,11 @@ ul.cv_db_user_nav{
 }
 ul.cv_db_user_nav li{margin-right: 10px;}
 ul.cv_db_user_nav li:last-child{margin-right: 0px;}
-
+.navbar-vertical.navbar-expand-md .cv_db_collapse_nav a{
+	padding-top: .45rem;
+    padding-bottom: .45rem;
+    font-size: .8125rem;
+}
 /*Admin Nav Style*/
 
 .cv_db_admin_nav_title h6{
