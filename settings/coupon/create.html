@@ -13,7 +13,7 @@
     <!-- Fontawesome Sytle CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Dashboard Sytle CSS -->
-    <link rel="stylesheet" href="../assets/css/db_style.css">
+    <link rel="stylesheet" href="../../assets/css/db_style.css">
     
   </head>
   <body class="cv_db_full_height">
@@ -23,7 +23,7 @@
       <aside class="cv_db_aside_area clearfix cv_db_full_height cv_db_scrollbar" id="aside_area">
         
           <div class="cv_db_logo mb-2">
-            <a href="/"><img src="../assets/images/cropped-logo.png" alt="Logo" /></a> 
+            <a href="/"><img src="../../assets/images/cropped-logo.png" alt="Logo" /></a> 
           </div><!-- end of db_logo -->
         
         <div class="cv_db_sidebar_nav navbar navbar-vertical navbar-expand-xs fixed-left navbar-expand-md navbar-light bg-white clearfix" id="sidebar_nav">
@@ -437,7 +437,7 @@
                                         <p>Developer</p>
                                     </div><!-- end of cv_db_user_info -->
                                     <div class="cv_db_user_avater">
-                                        <img src="../assets/images/Mamun.jpg" alt="User Avater">
+                                        <img src="../../assets/images/Mamun.jpg" alt="User Avater">
                                     </div><!-- end of cv_db_user_avater -->
                                 </a>
                                 <div class="cv_bd_dropdown_menu cv_db_admin_nav dropdown-menu cv_db_slideIn" aria-labelledby="cv_bd_dropdown">
@@ -463,7 +463,7 @@
               <div class="row">
                 <div class="col">
                     <div class="cv_db_pageinfo">
-                        <h1 class="cv_db_pageinfo_title cv_db_text_white">Export Data</h1>
+                        <h1 class="cv_db_pageinfo_title cv_db_text_white">Coupons</h1>
                     </div><!-- end of cv_db_pageinfo -->
                 </div><!-- end of col -->
               </div><!-- end of row -->
@@ -471,144 +471,116 @@
         </section><!-- end of cv_db_status_sec -->
 
         <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <div class="cv_db_setup_card card shadow border-0">
-                    <div class="row cv_db_content_cardbody">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_setup_card card shadow border-0">
+                  <div class="cv_db_card_header">
+                    <div class="row">
+                      <div class="col">
+                        <h3 class="mb-0">Add New Coupon</h3>
+                      </div><!-- end of col -->
 
-                      <div class="col-sm-6 mb-4">
-                        <div class="list-group">
-                          <div class="list-group-item">
-                            <h3>Export Contact Numbers</h3>
-                            <div class="input-daterange datepicker">
-                              <form action="#" method="GET">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-start-date">Start Date</label>
-                                      <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                        </div><!-- end of input-group-prepend -->
-                                        <input type="text" name="start_date" id="input-start-date" class="text-left form-control form-control-alternative" placeholder="Start Date" data-mask="00/00/0000" value="" autocomplete="off" maxlength="10">
-                                      </div><!-- end of input-group -->
-                                    </div><!-- end of form-group -->
-                                  </div><!-- end of col6 -->
+                      <div class="col text-right">
+                          <a href="index.html" class="btn btn-sm btn-primary"><i class="fas fa-chevron-left"></i> Back to Coupon</a>
+                      </div><!-- end of col -->
+                    </div><!-- end of row -->
+                  </div><!-- end of cv_db_card_header -->
 
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-end-date">End Date</label>
-                                      <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                        </div><!-- end of input-group-prepend -->
-                                        <input type="text" name="end_date" id="input-end-date" class="text-left form-control form-control-alternative" data-mask="00/00/0000" placeholder="End Date" value="" autocomplete="off" maxlength="10">
-                                      </div><!-- end of input-group -->
-                                    </div><!-- end of form-group -->
-                                  </div><!-- end of col6 -->
-                                </div><!-- end of row -->
-                              </form><!-- end of form -->
-                            </div><!-- end of input-daterange -->
+                  <div class="col-sm-6">
+                    <form method="post" action="#" autocomplete="off">
+                      <input type="hidden" name="_token" value="">
+                      <div class="form-group mt-4">
+                        <label class="form-control-label mb-2" for="input-coupon-type">Coupon Type</label>
+                        <select name="coupon_type" class="form-control form-control-alternative" required="" autofocus="" id="input-coupon-type">
+                          <option value="">Select Coupon Type</option>
+                          <option value="1">Vehicle</option>
+                          <option value="2">Parcel</option>
+                          <option value="3">Shifting</option>
+                        </select><!-- end of select -->
 
-                            <div class="text-right">
-                              <button class="btn btn-info" type="submit">Export</button>
-                            </div><!-- end of text-right -->
+                        <div class="vehicle-select" style="display: none;">
 
-                          </div><!-- end of list-group-item -->
-                        </div><!-- end of list-group -->
-                      </div><!-- end of col6 -->
-                         
-                      <div class="col-sm-6 mb-4">
-                        <div class="list-group">
-                          <div class="list-group-item">
-                            <h3 class="mb-1">Export Completed And Fake Trips</h3>
-                            <div class="input-daterange datepicker">
-                              <form action="#" method="GET">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-start-date">Start Date</label>
-                                      <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                        </div><!-- end of input-group-prepend -->
-                                        <input type="text" name="start_date" id="input-start-date" class="text-left form-control form-control-alternative" placeholder="Start Date" data-mask="00/00/0000" value="" autocomplete="off" maxlength="10">
-                                      </div><!-- end of input-group -->
-                                    </div><!-- end of form-group -->
-                                  </div><!-- end of col6 -->
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-vehicle-type-id">Vehicle Category</label>
+                            <select name="vehicle_type_id" class="drop-condition form-control form-control-alternative" data-target="#input-vehicle-sub-type-id" data-items="{&quot;1&quot;:[{&quot;sub_id&quot;:1,&quot;type_id&quot;:1,&quot;type_name&quot;:&quot;Car&quot;,&quot;Sub_type_name&quot;:&quot;Regular&quot;,&quot;active&quot;:1}],&quot;2&quot;:[{&quot;sub_id&quot;:3,&quot;type_id&quot;:2,&quot;type_name&quot;:&quot;Micro&quot;,&quot;Sub_type_name&quot;:&quot;Mega&quot;,&quot;active&quot;:1},{&quot;sub_id&quot;:4,&quot;type_id&quot;:2,&quot;type_name&quot;:&quot;Micro&quot;,&quot;Sub_type_name&quot;:&quot;Mega plus&quot;,&quot;active&quot;:1}],&quot;5&quot;:[{&quot;sub_id&quot;:15,&quot;type_id&quot;:5,&quot;type_name&quot;:&quot;Bike&quot;,&quot;Sub_type_name&quot;:&quot;Zuba&quot;,&quot;active&quot;:1}],&quot;6&quot;:[{&quot;sub_id&quot;:16,&quot;type_id&quot;:6,&quot;type_name&quot;:&quot;Yellow Taxi&quot;,&quot;Sub_type_name&quot;:&quot;Cab&quot;,&quot;active&quot;:1}],&quot;8&quot;:[{&quot;sub_id&quot;:20,&quot;type_id&quot;:8,&quot;type_name&quot;:&quot;Ambulance&quot;,&quot;Sub_type_name&quot;:&quot;AC&quot;,&quot;active&quot;:1},{&quot;sub_id&quot;:21,&quot;type_id&quot;:8,&quot;type_name&quot;:&quot;Ambulance&quot;,&quot;Sub_type_name&quot;:&quot;NON AC&quot;,&quot;active&quot;:1},{&quot;sub_id&quot;:22,&quot;type_id&quot;:8,&quot;type_name&quot;:&quot;Ambulance&quot;,&quot;Sub_type_name&quot;:&quot;ICU&quot;,&quot;active&quot;:1}]}" data-old-val="" data-title="Select Vehicle Sub Type" data-key-index="sub_id" data-key-title="Sub_type_name" id="input-vehicle-type-id">
+                              <option value="">Select Vehicle Category</option>
+                              <option value="1">Car</option>
+                              <option value="2">Micro</option>
+                              <option value="5">Bike</option>
+                              <option value="6">Yellow Taxi</option>
+                              <option value="8">Ambulance</option>
+                            </select><!-- end of select -->
+                          </div><!-- end of form-group -->
 
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-end-date">End Date</label>
-                                      <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                        </div>
-                                        <input type="text" name="end_date" id="input-end-date" class="text-left form-control form-control-alternative" data-mask="00/00/0000" placeholder="End Date" value="" autocomplete="off" maxlength="10">
-                                      </div><!-- end of input-group -->
-                                    </div><!-- end of form-group -->
-                                  </div><!-- end of col6 -->
-                                </div><!-- end of row -->
-                                
-                              </form><!-- end of form -->
-                            </div><!-- end of input-daterange -->
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-vehicle-sub-type-id">Vehicle Sub Category</label>
+                            <select name="vehicle_sub_id" class="form-control form-control-alternative" id="input-vehicle-sub-type-id"><option value="">Select Vehicle Sub Type</option></select>
+                          </div><!-- end of form-group -->
+                        </div><!-- end of vehicle-select -->
+                      </div><!-- end of form-group -->
 
-                            <div class="text-right">
-                              <button class="btn btn-info" type="submit">Export</button>
-                            </div><!-- end of text-right-->
-                            
-                          </div><!-- end of list-group-item -->
-                        </div><!-- end of list-group -->
-                      </div><!-- end of col6 -->
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-coupon">Coupon</label>
+                        <input type="text" name="coupon" id="input-coupon" class="form-control form-control-alternative" placeholder="Coupon" value="" required="" autofocus="">
+                      </div><!-- end of form-group -->
 
-                      <div class="col-sm-6 mb-4">
-                        <div class="list-group">
-                          <div class="list-group-item">
-                            <h3 class="mb-1">Export Driver Online Earning And Carbangla Commission</h3>
-                            <div class="input-daterange datepicker">
-                              <form action="#" method="GET">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-start-date">Start Date</label>
-                                      <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                        </div>
-                                        <input type="text" name="start_date" id="input-start-date" class="text-left form-control form-control-alternative" placeholder="Start Date" data-mask="00/00/0000" value="" autocomplete="off" maxlength="10">
-                                      </div><!-- end of input-group -->
-                                    </div><!-- end of form-group -->
-                                  </div><!-- end of col 6 -->
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-amount-percentage">Amount Percentage</label>
+                        <input type="text" name="amount_percentage" id="input-amount-percentage" class="input-mask-percent form-control form-control-alternative" placeholder="Amount Percentage" value="" required="">
+                      </div><!-- end of form-group -->
 
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label class="form-control-label" for="input-end-date">End Date</label>
-                                      <div class="input-group input-group-alternative">
-                                        <div class="input-group-prepend">
-                                          <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
-                                        </div><!-- end of input-group -->
-                                        <input type="text" name="end_date" id="input-end-date" class="text-left form-control form-control-alternative" data-mask="00/00/0000" placeholder="End Date" value="" autocomplete="off" maxlength="10">
-                                      </div><!-- end of input-group -->
-                                    </div><!-- end of form-group -->
-                                  </div><!-- end of col6 -->
-                                </div><!-- end of row -->
-                              </form><!-- end of form -->
-                            </div><!-- end of input-daterange -->
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-upto-amount">Upto Amount</label>
+                        <input type="text" name="upto_amount" id="input-upto-amount" class="form-control form-control-alternative" placeholder="Upto Amount" value="">
+                      </div><!-- end of form-group -->
 
-                            <div class="text-right">
-                              <button class="btn btn-info" type="submit">Export</button>
-                            </div><!-- end of text-right -->
-                                
-                          </div><!-- end of list-group-item-->
-                        </div><!-- end of list-group -->
-                      </div><!-- end of col6 -->
+                      <div class="form-group focused">
+                        <label class="form-control-label mb-2" for="input-coupon-date">Coupon Date</label>
+                        <input type="text" name="coupon_date" id="input-coupon-date" class="form-control datepicker form-control-alternative" placeholder="Coupon Date" value="29/09/2019" required="">
+                      </div><!-- end of form-group -->
 
-                     </div><!-- end of row -->
-                  </div><!-- end of card -->
-                </div><!-- end of col -->
-              </div><!-- end of row -->
-            </div><!-- end of container-fluid -->
+                      <div class="form-group focused">
+                        <label class="form-control-label mb-2" for="input-upto-date">Upto Date</label>
+                        <input type="text" name="upto_date" id="input-upto-date" class="form-control datepicker form-control-alternative" placeholder="Upto Date" value="30/09/2019" required="">
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <div id="user-select">
+                          <div class="custom-control custom-radio mb-3 target-select">
+                            <input name="user_select" class="custom-control-input" id="users-all" type="radio" checked="" value="1">
+                              <label class="custom-control-label" for="users-all">All</label>
+                          </div><!-- end of custom-control -->
+                          <div class="custom-control custom-radio mb-3 target-select">
+                            <input name="user_select" class="custom-control-input" id="users-specific" type="radio" value="2">
+                            <label class="custom-control-label" for="users-specific">Select</label>
+                          </div><!-- end of custom-control -->
+
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="users-search dropdown-multiple" style="display: none;">
+                                <select id="users-list" name="users_list[]" style="display:none" multiple="" placeholder="Select"></select>
+                              <a href="javascript:;" class="dropdown-display" tabindex="0"><span class="dropdown-chose-list"><span class="placeholder">Select</span></span></a><a href="javascript:;" class="dropdown-clear-all" tabindex="0">×</a><div class="dropdown-main"><span class="dropdown-search"><input type="text" maxlength="20" placeholder="Search"></span><ul></ul></div></div>
+                            </div><!-- end of users-search -->
+                          </div><!-- end of row -->
+                        </div>
+                      </div><!-- end of form-group -->
+
+                      <div class="custom-control custom-checkbox mb-3 clear-left form-group">
+                        <input class="custom-control-input" name="active" id="input-active" type="checkbox" value="1">
+                        <label class="custom-control-label" for="input-active">Active</label>
+                      </div><!-- end of custom-control -->
+
+                      <div class="text-left mb-4">
+                        <button type="submit" class="btn btn-success mt-4">Save</button>
+                      </div><!-- end of text-left -->
+
+                    </form><!-- end of form -->
+                  </div><!-- end of col6 -->
+                </div><!-- end of card -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
         </section><!-- end of cv_db_setup_general -->
 
         <footer class="footer cv_db_footer cv_db_sec_gap clearfix" id="footer">
@@ -648,6 +620,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../assets/js/db_style.js"></script>
+    <script src="../../assets/js/db_style.js"></script>
   </body>
 </html>
