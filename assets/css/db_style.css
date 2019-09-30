@@ -3,6 +3,7 @@
 @import url('text_color.css');
 @import url('aside_style.css');
 @import url('bg_color.css');
+@import url('skin.min.css');
 
 /*Font Awesome */
 @import url('../fonts/fontawesome.min.css');

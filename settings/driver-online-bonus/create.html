@@ -463,7 +463,7 @@
               <div class="row">
                 <div class="col">
                     <div class="cv_db_pageinfo">
-                        <h1 class="cv_db_pageinfo_title cv_db_text_white">Driver Experience</h1>
+                      <h1 class="cv_db_pageinfo_title cv_db_text_white"> Add Vehicle Category </h1>
                     </div><!-- end of cv_db_pageinfo -->
                 </div><!-- end of col -->
               </div><!-- end of row -->
@@ -471,109 +471,187 @@
         </section><!-- end of cv_db_status_sec -->
 
         <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <div class="cv_db_setup_card card shadow border-0">
-                    <div class="cv_db_card_header">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_setup_card card shadow border-0">
+                  <div class="cv_db_card_header">
+                    <div class="row">
+                      <div class="col">
+                        <h3 class="mb-0">Add Vehicle Category</h3>
+                      </div><!-- end of col -->
+
+                      <div class="col text-right">
+                          <a href="index.html" class="btn btn-sm btn-primary"><i class="fas fa-chevron-left"></i> Back to Vehicle Category</a>
+                      </div><!-- end of col -->
+                    </div><!-- end of row -->
+                  </div><!-- end of cv_db_card_header -->
+
+                  <div class="col-sm-9">
+                    <form method="post" action="#" autocomplete="off">
+                      <input type="hidden" name="_token" value="">
+
                       <div class="row">
-                        <div class="col text-center">
-                            <div class="cv_db_filter">
-                              <form action="#" method="GET" class="form-inline">
-                                <label class="my-1 mr-2 control-label" for="filter-input">Filter
-                                  <a href="#" onclick="javascript:return false;" class="ml-1 text-primary" data-toggle="popover" title="" data-placement="top" data-html="true" data-content="<p><small>Available columns-</small></p><p><pre>country_name</pre></p><p><small>You can search the result in following format- </small></p>
-                                    <p><pre>column_name:value1,value2</pre></p>
-                                    <p><small>You can specify multiple values for a column</small></p>
-                                    <p><small>You can enter any term without any column name then it will be searched in all the columns</small><p>" data-original-title="Filter Help"><i class="fa fa-question-circle"></i></a></label>
-                                <input style="width:68%" id="filter-input" class="form-control my-1 mr-sm-2" type="text" name="s" value="" placeholder="Type your search here...">
-                                <button type="submit" class="btn btn-lg btn-primary">Filter</button>
-                              </form>
-                            </div><!-- end of -->
-                        </div><!-- end of col -->
-
-                        <div class="col text-center">
-                          <nav class="d-flex justify-content-center cv_db_pagination" aria-label="...">
-                            <ul class="pagination">
-                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-                            </ul>
-                          </nav><!-- end of cv_db_pagination -->
-                        </div><!-- end of col -->
-
-                        <div class="col text-right">
-                            <a href="create.html" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add Driver Experience</a>
-                        </div><!-- end of col -->
+                        <div class="col-md-6">
+                          <div class="form-group mt-2">
+                            <label class="form-control-label" for="input-vehicle-type">Vehicle Type</label>
+                            <select name="vehicle_type" id="input-vehicle-type" class="input-mask form-control form-control-alternative">
+                              <option value="">Any</option>
+                              <option value="1">Car</option>
+                              <option value="2">Micro</option>
+                              <option value="5">Bike</option>
+                              <option value="6">Yellow Taxi</option>
+                              <option value="7">CNG</option>
+                              <option value="8">Ambulance</option>
+                              <option value="10">Truck</option>
+                              <option value="13">Cover Van</option>
+                            </select>
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
                       </div><!-- end of row -->
-                    </div><!-- end of cv_db_card_header -->
 
-                    <div class="table-responsive" id="cv_db_table_area">
-                      <table class="table align-items-center table-flush">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col"><a href="#">SN.</a> <i class="fa fa-sort"></i></th>
-                            <th scope="col"><a href="#">EXPERIENCE TITLE</a> <i class="fa fa-sort"></i></th>
-                            <th scope="col"><a href="#">Status</a> <i class="fa fa-sort"></i></th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead><!-- end of thead -->
+                      <div class="row input-daterange datepicker">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-start-date">Start Date</label>
+                            <div class="input-group input-group-alternative">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                              </div><!-- end of input-group-prepend -->
+                              
+                              <input type="text" name="start_date" id="input-start-date" class="text-left form-control form-control-alternative" placeholder="Start Date" value="" required="">
+                            </div><!-- end of input-group -->
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
 
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>D. Exp - 07 Years</td>
-                            <td><span class="cv_db_badge cv_db_badge_danger">ACTIVE</span></td>
-                            <td class="text-right">
-                              <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                              </a>
-                              <form action="#" method="post" class="d-inline-block">
-                                <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
-                                <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
-                                </button>
-                              </form>
-                            </td>
-                          </tr><!-- end of tr -->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-end-date">End Date</label>
+                            <div class="input-group input-group-alternative">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                              </div>
+                              <input type="text" name="end_date" id="input-end-date" class="text-left form-control form-control-alternative" data-mask="00/00/0000" placeholder="End Date" value="" required="" autocomplete="off" maxlength="10">
+                            </div>
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
+                      </div><!-- end of row -->
 
-                          <tr>
-                            <td>2</td>
-                            <td>D. Exp - Above 10 Years</td>
-                            <td><span class="cv_db_badge cv_db_badge_danger">INACTIVE</span></td>
-                            <td class="text-right">
-                              <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                              </a>
-                              <form action="#" method="post" class="d-inline-block">
-                                <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
-                                <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
-                                </button>
-                              </form>
-                            </td>
-                          </tr><!-- end of tr -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-start-time">Start Time</label>
+                            <input type="text" name="start_time" id="input-start-time" class="input-time input-mask-time form-control form-control-alternative" data-mask="00:00" placeholder="Start Time" value="" required="" autocomplete="off" maxlength="5">
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
 
-                        </tbody><!-- end of tbody -->
-                      </table><!-- end of table -->
-                    </div><!-- end of cv_db_setup_card-->
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-end-time">End Time</label>
+                            <input type="text" name="end_time" id="input-end-time" class="input-time input-mask-time form-control form-control-alternative" data-mask="00:00" placeholder="End Time" value="" required="" autocomplete="off" maxlength="5">
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
+                      </div><!-- end of row -->
 
-                    <div class="col-sm-12">
-                      <nav class="d-flex justify-content-center cv_db_pagination mb-4" aria-label="...">
-                        <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-                        </ul>
-                      </nav><!-- end of cv_db_pagination -->
-                    </div><!-- end of col12 -->
-                  </div><!-- end of card -->
-                </div><!-- end of col -->
-              </div><!-- end of row -->
-            </div><!-- end of container-fluid -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group focused">
+                            <label class="form-control-label" for="input-period">Period</label>
+                            <select class="form-control" name="period" id="input-period" required="">
+                                <option value="1">Second</option>
+                                <option value="2">Minute</option>
+                                <option value="3">Hour</option>
+                            </select>
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-minimum-period">Minimum Period</label>
+                            <input type="text" name="minimum_period" id="input-minimum-period" class="input-mask form-control form-control-alternative" data-mask="999999.00" placeholder="Minimum Period" value="" required="" autocomplete="off" maxlength="9">
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
+                      </div><!-- end of row -->
+
+                      <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label class="form-control-label" for="input-amount">Amount Per Period</label>
+                              <input type="text" name="amount" id="input-amount" class="input-mask form-control form-control-alternative" data-mask="999999.00" placeholder="Amount Per Period" value="" required="" autocomplete="off" maxlength="9">
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label class="form-control-label" for="input-upto-amount">Upto Amount</label>
+                            <input type="text" name="upto_amount" id="input-upto-amount" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Upto Amount" value="" required="" autocomplete="off">
+                          </div><!-- end of form-group -->
+                        </div><!-- end of col6 -->
+                      </div><!-- end of row -->
+
+                      <hr class="mt-4" />
+
+                      <h4 class="mt-4 mb-4" style="font-size: 14px;">PENALTY CONDITIONS</h4>
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-minimum-trip-request">Minimum Trip Request</label>
+                        <div class="col-md-9">
+                          <input type="text" name="minimum_trip_request" id="input-minimum-trip-request" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Minimum Trip Request" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-bonus-rate">Bonus for 0% Acceptance Rate</label>
+                        <div class="col-md-9">
+                          <input type="text" name="bonus_rate" id="input-bonus-rate" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Bonus for 0% Acceptance Rate" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-bonusa-at-20-rate">Bonus for 20% Acceptance Rate</label>
+                        <div class="col-md-9">
+                          <input type="text" name="bonus_rate_at_20" id="input-bonusa-at-20-rate" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Bonus for 20% Acceptance Rate" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-bonusa-at-40-rate">Bonus for 40% Acceptance Rate</label>
+                        <div class="col-md-9">
+                          <input type="text" name="bonus_rate_at_40" id="input-bonusa-at-40-rate" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Bonus for 40% Acceptance Rate" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-bonusa-at-60-rate">Bonus for 60% Acceptance Rate</label>
+                        <div class="col-md-9">
+                          <input type="text" name="bonus_rate_at_60" id="input-bonusa-at-60-rate" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Bonus for 60% Acceptance Rate" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-bonusa-at-80-rate">Bonus for 80% Acceptance Rate</label>
+                        <div class="col-md-9">
+                          <input type="text" name="bonus_rate_at_80" id="input-bonusa-at-80-rate" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Bonus for 80% Acceptance Rate" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="row form-group">
+                        <label class="form-control-label col-form-label col-md-3" for="input-bonusa-at-100-rate">Bonus for 100% Acceptance Rate</label>
+                        <div class="col-md-9">
+                          <input type="text" name="bonus_rate_at_100" id="input-bonusa-at-100-rate" class="input-mask form-control form-control-alternative" data-mask="0#" placeholder="Bonus for 100% Acceptance Rate" value="" autocomplete="off">
+                        </div><!-- end of col9 -->
+                      </div><!-- end of form-group -->
+
+                      <div class="text-left mb-4">
+                        <button type="submit" class="btn btn-success mt-4">Save</button>
+                      </div><!-- end of text-left -->
+
+                    </form><!-- end of form -->
+                  </div><!-- end of col6 -->
+                </div><!-- end of card -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
         </section><!-- end of cv_db_setup_general -->
 
         <footer class="footer cv_db_footer cv_db_sec_gap clearfix" id="footer">

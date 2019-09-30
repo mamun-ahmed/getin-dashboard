@@ -13,7 +13,7 @@
     <!-- Fontawesome Sytle CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Dashboard Sytle CSS -->
-    <link rel="stylesheet" href="../assets/css/db_style.css">
+    <link rel="stylesheet" href="../../assets/css/db_style.css">
     
   </head>
   <body class="cv_db_full_height">
@@ -23,7 +23,7 @@
       <aside class="cv_db_aside_area clearfix cv_db_full_height cv_db_scrollbar" id="aside_area">
         
           <div class="cv_db_logo mb-2">
-            <a href="/"><img src="../assets/images/cropped-logo.png" alt="Logo" /></a> 
+            <a href="/"><img src="../../assets/images/cropped-logo.png" alt="Logo" /></a> 
           </div><!-- end of db_logo -->
         
         <div class="cv_db_sidebar_nav navbar navbar-vertical navbar-expand-xs fixed-left navbar-expand-md navbar-light bg-white clearfix" id="sidebar_nav">
@@ -437,7 +437,7 @@
                                         <p>Developer</p>
                                     </div><!-- end of cv_db_user_info -->
                                     <div class="cv_db_user_avater">
-                                        <img src="../assets/images/Mamun.jpg" alt="User Avater">
+                                        <img src="../../assets/images/Mamun.jpg" alt="User Avater">
                                     </div><!-- end of cv_db_user_avater -->
                                 </a>
                                 <div class="cv_bd_dropdown_menu cv_db_admin_nav dropdown-menu cv_db_slideIn" aria-labelledby="cv_bd_dropdown">
@@ -462,9 +462,9 @@
             <div class="container-fluid cv_db_full_height">
               <div class="row">
                 <div class="col">
-                  <div class="cv_db_pageinfo">
-                    <h1 class="cv_db_pageinfo_title cv_db_text_white mb-3">Driver Online Bonus</h1>
-                  </div><!-- end of cv_db_pageinfo -->
+                    <div class="cv_db_pageinfo">
+                      <h1 class="cv_db_pageinfo_title cv_db_text_white">Account Name</h1>
+                    </div><!-- end of cv_db_pageinfo -->
                 </div><!-- end of col -->
               </div><!-- end of row -->
             </div><!-- end of container-fluid -->
@@ -477,100 +477,36 @@
                 <div class="cv_db_setup_card card shadow border-0">
                   <div class="cv_db_card_header">
                     <div class="row">
-                        
                       <div class="col">
-                        <h3 class="mb-0">Driver Online Bonus</h3>
-                      </div><!-- end of col -->
-
-                      <div class="col text-center">
-                        <nav class="d-flex justify-content-center cv_db_pagination" aria-label="...">
-                          <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-                          </ul>
-                        </nav><!-- end of cv_db_pagination -->
+                        <h3 class="mb-0">Add Payment Account Name</h3>
                       </div><!-- end of col -->
 
                       <div class="col text-right">
-                          <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add New Entry</a>
+                          <a href="index.html" class="btn btn-sm btn-primary"><i class="fas fa-chevron-left"></i> Back to Account Name</a>
                       </div><!-- end of col -->
                     </div><!-- end of row -->
                   </div><!-- end of cv_db_card_header -->
 
-                  <div class="table-responsive" id="cv_db_table_area">
-                    <table class="table align-items-center table-flush">
-                      <thead class="thead-light">
-                        <tr>
-                          <th scope="col">SN</th>
-                          <th scope="col">VEHICLE TYPE</th>
-                          <th scope="col">START DATE</th>
-                          <th scope="col">END DATE</th>
-                          <th scope="col">START TIME</th>
-                          <th scope="col">END TIME</th>
-                          <th scope="col">AMOUNT</th>
-                          <th scope="col">PERIOD</th>
-                          <th scope="col">MINIMUM PERIOD</th>
-                          <th scope="col">UPTO AMOUNT</th>
-                          <th scope="col"></th>
-                        </tr>
-                      </thead><!-- end of thead -->
+                  <div class="col-sm-6">
+                    <form method="post" action="#" autocomplete="off">
+                      <input type="hidden" name="_token" value="">
 
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Any</td>
-                          <td>#18/05/2019</td>
-                          <td>25/07/2019</td>
-                          <td>09:00</td>
-                          <td>21:00</td>
-                          <td>20</td>
-                          <td>Hour</td>
-                          <td>1</td>
-                          <td>200</td>
-                          <td class="text-right">
-                            <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
-                              <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                            </a>
-                            <form action="#" method="post" class="d-inline-block">
-                              <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
-                              <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
-                              <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
-                              </button>
-                            </form>
-                          </td>
-                        </tr><!-- end of tr -->
+                      <div class="form-group mt-4">
+                        <label class="form-control-label mb-2" for="input-account-name">Account Name</label>
+                        <input type="text" name="input-account-name" id="input-name" class="form-control form-control-alternative" placeholder="Account Name" value="" required="" autofocus="">
+                      </div><!-- end of form-group -->
 
-                        <tr>
-                          <td>1</td>
-                          <td>Any</td>
-                          <td>#18/05/2019</td>
-                          <td>25/07/2019</td>
-                          <td>09:00</td>
-                          <td>21:00</td>
-                          <td>20</td>
-                          <td>Hour</td>
-                          <td>1</td>
-                          <td>200</td>
-                          <td class="text-right">
-                            <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
-                              <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                            </a>
-                            <form action="#" method="post" class="d-inline-block">
-                              <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
-                              <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
-                              <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
-                              </button>
-                            </form>
-                          </td>
-                        </tr><!-- end of tr -->
+                      <div class="custom-control col-sm-6 custom-checkbox mb-3 form-group">
+                        <input class="custom-control-input" name="active" id="input-active" type="checkbox" value="1">
+                        <label class="custom-control-label" for="input-active">Active</label>
+                      </div><!-- end of custom-control -->
+  
+                      <div class="text-left mb-4">
+                        <button type="submit" class="btn btn-success mt-4">Save</button>
+                      </div><!-- end of text-left -->
 
-                      </tbody><!-- end of tbody -->
-                    </table><!-- end of table -->
-                  </div><!-- end of cv_db_setup_card-->
-
+                    </form><!-- end of form -->
+                  </div><!-- end of col6 -->
                 </div><!-- end of card -->
               </div><!-- end of col -->
             </div><!-- end of row -->
@@ -614,6 +550,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../assets/js/db_style.js"></script>
+    <script src="../../assets/js/db_style.js"></script>
   </body>
 </html>

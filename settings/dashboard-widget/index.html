@@ -22,9 +22,9 @@
       
       <aside class="cv_db_aside_area clearfix cv_db_full_height cv_db_scrollbar" id="aside_area">
         
-          <div class="cv_db_logo mb-2">
-            <a href="/"><img src="../../assets/images/cropped-logo.png" alt="Logo" /></a> 
-          </div><!-- end of db_logo -->
+        <div class="cv_db_logo mb-2">
+          <a href="/"><img src="../../assets/images/cropped-logo.png" alt="Logo" /></a> 
+        </div><!-- end of db_logo -->
         
         <div class="cv_db_sidebar_nav navbar navbar-vertical navbar-expand-xs fixed-left navbar-expand-md navbar-light bg-white clearfix" id="sidebar_nav">
 
@@ -463,7 +463,7 @@
               <div class="row">
                 <div class="col">
                     <div class="cv_db_pageinfo">
-                        <h1 class="cv_db_pageinfo_title cv_db_text_white">Driver Experience</h1>
+                      <h1 class="cv_db_pageinfo_title cv_db_text_white">Dashboard Widget Setting</h1>
                     </div><!-- end of cv_db_pageinfo -->
                 </div><!-- end of col -->
               </div><!-- end of row -->
@@ -471,109 +471,219 @@
         </section><!-- end of cv_db_status_sec -->
 
         <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col">
-                  <div class="cv_db_setup_card card shadow border-0">
-                    <div class="cv_db_card_header">
-                      <div class="row">
-                        <div class="col text-center">
-                            <div class="cv_db_filter">
-                              <form action="#" method="GET" class="form-inline">
-                                <label class="my-1 mr-2 control-label" for="filter-input">Filter
-                                  <a href="#" onclick="javascript:return false;" class="ml-1 text-primary" data-toggle="popover" title="" data-placement="top" data-html="true" data-content="<p><small>Available columns-</small></p><p><pre>country_name</pre></p><p><small>You can search the result in following format- </small></p>
-                                    <p><pre>column_name:value1,value2</pre></p>
-                                    <p><small>You can specify multiple values for a column</small></p>
-                                    <p><small>You can enter any term without any column name then it will be searched in all the columns</small><p>" data-original-title="Filter Help"><i class="fa fa-question-circle"></i></a></label>
-                                <input style="width:68%" id="filter-input" class="form-control my-1 mr-sm-2" type="text" name="s" value="" placeholder="Type your search here...">
-                                <button type="submit" class="btn btn-lg btn-primary">Filter</button>
-                              </form>
-                            </div><!-- end of -->
-                        </div><!-- end of col -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_setup_card card shadow">
 
-                        <div class="col text-center">
-                          <nav class="d-flex justify-content-center cv_db_pagination" aria-label="...">
-                            <ul class="pagination">
-                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                              <li class="page-item"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-                            </ul>
-                          </nav><!-- end of cv_db_pagination -->
-                        </div><!-- end of col -->
+                  <div class="row">
+                    <div class="col">
+                      <div class="cv_db_card_header">
+                        <h3 class="mb-0">Dashboard Header Cards Management</h3>
+                      </div><!-- end of cv_db_card_header -->
+                    </div><!-- end of col -->
+                  </div><!-- end of row -->
 
-                        <div class="col text-right">
-                            <a href="create.html" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add Driver Experience</a>
-                        </div><!-- end of col -->
-                      </div><!-- end of row -->
-                    </div><!-- end of cv_db_card_header -->
-
-                    <div class="table-responsive" id="cv_db_table_area">
-                      <table class="table align-items-center table-flush">
-                        <thead class="thead-light">
-                          <tr>
-                            <th scope="col"><a href="#">SN.</a> <i class="fa fa-sort"></i></th>
-                            <th scope="col"><a href="#">EXPERIENCE TITLE</a> <i class="fa fa-sort"></i></th>
-                            <th scope="col"><a href="#">Status</a> <i class="fa fa-sort"></i></th>
-                            <th scope="col"></th>
-                          </tr>
-                        </thead><!-- end of thead -->
-
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>D. Exp - 07 Years</td>
-                            <td><span class="cv_db_badge cv_db_badge_danger">ACTIVE</span></td>
-                            <td class="text-right">
-                              <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                              </a>
-                              <form action="#" method="post" class="d-inline-block">
-                                <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
-                                <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
-                                </button>
-                              </form>
-                            </td>
-                          </tr><!-- end of tr -->
-
-                          <tr>
-                            <td>2</td>
-                            <td>D. Exp - Above 10 Years</td>
-                            <td><span class="cv_db_badge cv_db_badge_danger">INACTIVE</span></td>
-                            <td class="text-right">
-                              <a class="btn btn-icon btn-2 btn-info" href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                              </a>
-                              <form action="#" method="post" class="d-inline-block">
-                                <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="delete">
-                                <button type="button" class="btn btn-icon btn-2 btn-danger btn-confirm-submit" data-toggle="tooltip" data-placement="top" title="" data-message="Are you sure you want to delete ? This action can not be undone." data-original-title="Delete coupon">
-                                <span class="btn-inner--icon"><i class="fa fa-trash-alt" aria-hidden="true"></i></span>
-                                </button>
-                              </form>
-                            </td>
-                          </tr><!-- end of tr -->
-
-                        </tbody><!-- end of tbody -->
-                      </table><!-- end of table -->
-                    </div><!-- end of cv_db_setup_card-->
-
+                  <div class="row">
                     <div class="col-sm-12">
-                      <nav class="d-flex justify-content-center cv_db_pagination mb-4" aria-label="...">
-                        <ul class="pagination">
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
-                        </ul>
-                      </nav><!-- end of cv_db_pagination -->
+                      <div class="cv_db_content_cardbody cv_bd_graylight_bg card-body">
+                        <div class="cv_db_content_cardbody">
+                          <form method="post" action="#" autocomplete="off">
+                            <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="put">                            <input type="hidden" name="widget_name" value="active_header_card_widgets">
+                            <div class="pl-lg-4">
+                              <div class="form-group">
+                                <div class="row">
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-0" name="cards[]" type="checkbox" value="components.cards.total-trips">
+                                      <label for="input-card-0" class="custom-control-label">Total Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                      <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                        <input class="custom-control-input" id="input-card-1" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-payment">
+                                        <label for="input-card-1" class="custom-control-label">Total Riders Payments</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-2" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-cashback">
+                                      <label for="input-card-2" class="custom-control-label">Total cashback</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-3" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-bonus">
+                                      <label for="input-card-3" class="custom-control-label">Total Driver bonus</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-4" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                      <label for="input-card-4" class="custom-control-label">Total incentive</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-5" name="cards[]" type="checkbox" value="components.cards.total-riders">
+                                      <label for="input-card-5" class="custom-control-label">Total Riders</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-6" name="cards[]" type="checkbox" value="components.cards.total-owners">
+                                      <label for="input-card-6" class="custom-control-label">Total Owners</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-7" name="cards[]" type="checkbox" value="components.cards.total-agents">
+                                      <label for="input-card-7" class="custom-control-label">Total Agents</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-8" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-vehicles">
+                                      <label for="input-card-8" class="custom-control-label">Total Vehicles</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-9" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-drivers">
+                                      <label for="input-card-9" class="custom-control-label">Total Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-10" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-active-drivers">
+                                      <label for="input-card-10" class="custom-control-label">Total Active Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-11" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-inactive-drivers">
+                                      <label for="input-card-11" class="custom-control-label">Total Inactive Drivers</label><br>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-12" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-online-drivers">
+                                      <label for="input-card-12" class="custom-control-label">Total Online Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-13" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-offline-drivers">
+                                      <label for="input-card-13" class="custom-control-label">Total Offline Drivers</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-14" name="cards[]" type="checkbox" value="components.cards.total-completed-trips">
+                                      <label for="input-card-14" class="custom-control-label">Total completed Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-15" name="cards[]" type="checkbox" value="components.cards.total-issues-resolved">
+                                      <label for="input-card-15" class="custom-control-label">Total issues resolved</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-16" name="cards[]" type="checkbox" value="components.cards.total-accepted-trips">
+                                      <label for="input-card-16" class="custom-control-label">Total accepted Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-17" name="cards[]" type="checkbox" value="components.cards.total-rejected-trips">
+                                      <label for="input-card-17" class="custom-control-label">Total rejected Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-18" name="cards[]" type="checkbox" value="components.cards.total-failed-trips">
+                                      <label for="input-card-18" class="custom-control-label">Total failed Trips</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-19" name="cards[]" type="checkbox" value="components.cards.total-complaints">
+                                      <label for="input-card-19" class="custom-control-label">Total complaints</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-20" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-drivers-income">
+                                      <label for="input-card-20" class="custom-control-label">Total driver income</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-21" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-agent-owner-income">
+                                      <label for="input-card-21" class="custom-control-label">Total Owner / Agent Income</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-22" checked="checked" name="cards[]" type="checkbox" value="components.cards.total-carbangla-income">
+                                      <label for="input-card-22" class="custom-control-label">Total Carbangla Income</label><br>
+                                    </div><!-- end of custom-control -->
+                                    <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                      <input class="custom-control-input" id="input-card-23" name="cards[]" type="checkbox" value="components.cards.total-revenue">
+                                      <label for="input-card-23" class="custom-control-label">Total Revenue</label><br>
+                                    </div><!-- end of custom-control -->
+                                </div><!-- end of row -->
+                              </div><!-- end of form-group -->
+                              
+                              <div class="text-left">
+                                <button type="submit" class="btn btn-success">Save</button>
+                              </div><!-- end of text-left -->
+                            </div><!-- end of pl-lg-4 -->
+                          </form><!-- end of form -->
+                        </div><!-- end of cv_db_content_cardbody -->
+
+                      </div><!-- end of card-body -->
                     </div><!-- end of col12 -->
-                  </div><!-- end of card -->
-                </div><!-- end of col -->
-              </div><!-- end of row -->
-            </div><!-- end of container-fluid -->
+                  </div><!-- end of row -->
+                    
+                  <div class="row">
+                    <div class="col">
+                      <div class="cv_db_card_header">
+                        <h3 class="mb-0">Dashboard Widgets Management</h3>
+                      </div><!-- end of cv_db_card_header -->
+                    </div><!-- end of col -->
+                  </div><!-- end of row -->
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="cv_db_content_cardbody cv_bd_graylight_bg card-body">
+                        <div class="cv_db_content_cardbody">
+                          <form method="post" action="#" autocomplete="off">
+                            <input type="hidden" name="_token" value=""><input type="hidden" name="_method" value="put">                            <input type="hidden" name="widget_name" value="active_header_card_widgets">
+                            <div class="pl-lg-4">
+                              <div class="form-group">
+                                <div class="row">
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-0" name="cards[]" type="checkbox" value="components.cards.total-trips">
+                                    <label for="input-card-0" class="custom-control-label">Sales chart</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-1" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-payment">
+                                    <label for="input-card-1" class="custom-control-label">Today's Trips chart</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-2" checked="checked" name="cards[]" type="checkbox" value="components.cards.riders-cashback">
+                                    <label for="input-card-2" class="custom-control-label">Income Summary</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-3" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-bonus">
+                                    <label for="input-card-3" class="custom-control-label">Users Summary</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-4" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-4" class="custom-control-label">Trips Summary</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-5" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-5" class="custom-control-label">Trips insight vehicle</label><br>
+                                  </div><!-- end of custom-control -->
+                                  
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-6" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-6" class="custom-control-label">Trips insight area</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-7" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-7" class="custom-control-label">Rider Registration</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                  <div class="custom-control custom-checkbox mt-2 col-xl-3">
+                                    <input class="custom-control-input" id="input-card-8" checked="checked" name="cards[]" type="checkbox" value="components.cards.drivers-incentive">
+                                    <label for="input-card-8" class="custom-control-label">Trip Chart</label><br>
+                                  </div><!-- end of custom-control -->
+
+                                </div><!-- end of row -->
+                              </div><!-- end of form-group -->
+                              
+                              <div class="text-left">
+                                <button type="submit" class="btn btn-success">Save</button>
+                              </div><!-- end of text-left -->
+                            </div><!-- end of pl-lg-4 -->
+                          </form><!-- end of form -->
+                        </div><!-- end of cv_db_content_cardbody -->
+
+                      </div><!-- end of card-body -->
+                    </div><!-- end of col12 -->
+                  </div><!-- end of row -->
+                    
+                </div><!-- end of card -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
         </section><!-- end of cv_db_setup_general -->
 
         <footer class="footer cv_db_footer cv_db_sec_gap clearfix" id="footer">
