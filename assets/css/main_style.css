@@ -35,6 +35,9 @@
     font-size: .9rem;
     white-space: nowrap;
 }
+.table.align-items-center td, .table.align-items-center th {
+    vertical-align: middle;
+}
 
 /*Settings Page Style */
 
@@ -222,4 +225,13 @@
 }
 .cv_bd_btn_icon{
     color: #525f7f!important;
+}
+
+/*Owner Style*/
+
+.cv_db_user_avater{
+    display: flex;
+    max-width: 50px;
+    min-height: 50px;
+
 }
