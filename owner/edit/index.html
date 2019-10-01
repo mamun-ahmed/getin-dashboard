@@ -13,7 +13,7 @@
     <!-- Fontawesome Sytle CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Dashboard Sytle CSS -->
-    <link rel="stylesheet" href="../assets/css/db_style.css">
+    <link rel="stylesheet" href="../../assets/css/db_style.css">
     
   </head>
   <body class="cv_db_full_height">
@@ -23,7 +23,7 @@
       <aside class="cv_db_aside_area clearfix cv_db_full_height cv_db_scrollbar" id="aside_area">
         
         <div class="cv_db_logo mb-2">
-          <a href="/"><img src="../assets/images/cropped-logo.png" alt="Logo" /></a> 
+          <a href="/"><img src="../../assets/images/cropped-logo.png" alt="Logo" /></a> 
         </div><!-- end of db_logo -->
         
         <div class="cv_db_sidebar_nav navbar navbar-vertical navbar-expand-xs fixed-left navbar-expand-md navbar-light bg-white clearfix" id="sidebar_nav">
@@ -437,7 +437,7 @@
                           <p>Developer</p>
                         </div><!-- end of cv_db_user_info -->
                         <div class="cv_db_user_avater">
-                          <img src="../assets/images/Mamun.jpg" alt="User Avater">
+                          <img src="../../assets/images/Mamun.jpg" alt="User Avater">
                         </div><!-- end of cv_db_user_avater -->
                       </a>
                       <div class="cv_bd_dropdown_menu cv_db_admin_nav dropdown-menu cv_db_slideIn" aria-labelledby="cv_bd_dropdown">
@@ -462,9 +462,10 @@
           <div class="container-fluid cv_db_full_height">
             <div class="row">
               <div class="col">
-                <div class="cv_db_pageinfo">
-                  <h1 class="cv_db_pageinfo_title cv_db_text_white">User</h1>
-                </div><!-- end of cv_db_pageinfo -->
+                  <div class="cv_db_pageinfo">
+                    <h1 class="cv_db_pageinfo_title cv_db_text_white">Edit Owner</h1>
+                    <h2 class="cv_db_text_white">Mamun Ahmed</h2>
+                  </div><!-- end of cv_db_pageinfo -->
               </div><!-- end of col -->
             </div><!-- end of row -->
           </div><!-- end of container-fluid -->
@@ -473,62 +474,157 @@
         <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
           <div class="container-fluid">
             <div class="row">
-              <div class="col">
+              <div class="col-sm-8">
                 <div class="cv_db_setup_card card shadow border-0">
                   <div class="cv_db_card_header">
                     <div class="row">
-                      <div class="col-sm-4 text-center">
-                          <div class="cv_db_filter">
-                            <form action="#" method="GET" class="form-inline">
-                              <label class="my-1 mr-2 control-label" for="filter-input">Filter
-                                <a href="#" onclick="javascript:return false;" class="ml-1 text-primary" data-toggle="popover" title="" data-placement="top" data-html="true" data-content="<p><small>Available columns-</small></p><p><pre>country_name</pre></p><p><small>You can search the result in following format- </small></p>
-                                  <p><pre>column_name:value1,value2</pre></p>
-                                  <p><small>You can specify multiple values for a column</small></p>
-                                  <p><small>You can enter any term without any column name then it will be searched in all the columns</small><p>" data-original-title="Filter Help"><i class="fa fa-question-circle"></i></a></label>
-                              <input style="width:68%" id="filter-input" class="form-control my-1 mr-sm-2" type="text" name="s" value="" placeholder="Type your search here...">
-                              <button type="submit" class="btn btn-lg btn-primary">Filter</button>
-                            </form>
-                          </div><!-- end of -->
-                      </div><!-- end of col -->
-
-                      <div class="col text-right">
-                          <a href="create.html" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add New User</a>
-                          <a href="../role/create.html" class="btn btn-sm btn-primary"><i class="fas fa-plus"></i> Add User Role</a>
+                      <div class="col">
+                        <h3 class="mb-0">Owner Information</h3>
                       </div><!-- end of col -->
                     </div><!-- end of row -->
                   </div><!-- end of cv_db_card_header -->
 
-                  <div class="table-responsive" id="cv_db_table_area">
-                    <table class="table align-items-center table-flush">
-                      <thead class="thead-light">
-                        <tr>
-                          <th scope="col"><a href="#">Name</a> <i class="fa fa-sort"></i></th>
-                          <th scope="col"><a href="#">EMAIL</a> <i class="fa fa-sort"></i></th>
-                          <th scope="col"><a href="#">ROLE</a> <i class="fa fa-sort"></i></th>
-                          <th scope="col"><a href="#">CREATION DATE</a> <i class="fa fa-sort"></i></th>
-                          <th scope="col"></th>
-                        </tr>
-                      </thead><!-- end of thead -->
+                  <div class="col">
+                    <form method="post" action="#" autocomplete="off">
+                                              
+                      <h6 class="heading-small text-muted mt-4 mb-4">User information</h6>
+                
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-first-name">First Name</label>
+                        <input type="text" name="name" id="input-first-name" class="form-control form-control-alternative" placeholder="Mamun" value="" required="" autofocus="">
+                      </div><!-- end of form-group -->
+                
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-last-name">Last Name</label>
+                        <input type="text" name="name" id="input-last-name" class="form-control form-control-alternative" placeholder="Ahmed" value="" required="" autofocus="">
+                      </div><!-- end of form-group -->
+                
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-gender">Gender</label>
+                        <select name="gender" class="form-control form-control-alternative" required="" id="input-gender">
+                          <option value="">Select Gender</option>
+                          <option value="0">Female</option>
+                          <option value="1" selected="selected">Male</option>
+                        </select>
+                      </div><!-- end of form-group -->
 
-                      <tbody>
-                        <tr>
-                          <td>GetIn</td>
-                          <td>admin@getin.com</td>
-                          <td>SuperAdmin</td>
-                          <td class="text-right">
-                            <a class="btn btn-secondary" href="../profile/index.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit profile">
-                              <span class="btn-inner--icon"><i class="fa fa-pencil-alt" aria-hidden="true"></i></span>
-                              <span class="btn-inner--text">Edit Profile</span>
-                            </a>
-                          </td>
-                        </tr><!-- end of tr -->
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-date-of-birth">Date of Birth</label>
+                        <input type="text" name="name" id="input-date-of-birth" class="form-control form-control-alternative" placeholder="01/09/1990" value="" required="" autofocus="">
+                      </div><!-- end of form-group -->
 
-                      </tbody><!-- end of tbody -->
-                    </table><!-- end of table -->
-                  </div><!-- end of cv_db_setup_card-->
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-email">Email</label>
+                        <input type="email" name="email" id="input-email" class="form-control form-control-alternative" placeholder="mamun@gmail.com" value="" required="">
+                      </div><!-- end of form-group -->
 
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">Country</label>
+                        <select name="gender" class="form-control form-control-alternative" required="" id="input-country">
+                          <option value="">Select Country</option>
+                          <option value="0" selected="selected">Bangladesh</option>
+                          <option value="1">USA</option>
+                        </select>
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-city">City</label>
+                        <select name="gender" class="form-control form-control-alternative" required="" id="input-city">
+                          <option value="">Select City</option>
+                          <option value="0" selected="selected">Dhaka</option>
+                          <option value="1">Khulna</option>
+                        </select>
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-account-type">Account Type</label>
+                        <select name="gender" class="form-control form-control-alternative" required="" id="input-account-type">
+                          <option value="">Select Account Type</option>
+                          <option value="0" selected="selected">bKash</option>
+                          <option value="1">uCash</option>
+                          <option value="2">DBBL</option>
+                        </select>
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-account-number">Account Number</label>
+                        <input type="text" name="account_number" id="input-account-number" class="form-control form-control-alternative" placeholder="Account Number" value="" required="">
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-phone-number">Phone Number</label>
+                        <input type="text" name="phone_number" id="input-phone-number" class="form-control form-control-alternative" placeholder="+880 1677208080" value="" required="">
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-company-name">Company Name</label>
+                        <input type="text" name="phone_number" id="input-company-name" class="form-control form-control-alternative" placeholder="Civilized Tec LTD" value="" required="">
+                      </div><!-- end of form-group -->
+
+                      <div class="text-center mb-4">
+                        <button type="submit" class="btn btn-success mt-4">Save</button>
+                      </div><!-- end of form-group -->
+
+                    </form><!-- end of form -->
+                  </div><!-- end of col -->
                 </div><!-- end of card -->
-              </div><!-- end of col -->
+              </div><!-- end of col8  -->
+
+              <div class="col-sm-4">
+                <div class="cv_db_setup_card cv_db_sec_gap card shadow border-0">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <div class="card-header border-0">
+                          <h6 class="heading-small text-muted mt-0">Personal Image</h6>
+                        </div><!-- end of card-header -->
+                        <div class="cv_db_card_body card-body text-center">
+                          <img src="../../assets/images/Mamun.jpg" alt="" />
+                          
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <a href="#" class="btn btn-danger cv_db_btn_full text-center" title="Bro"><i class="fas fa-trash-alt"></i></a>
+                            </div><!-- end of col -->
+                            
+                            <div class="col-sm-6">
+                              <div class="cv_db_custom_file">
+                                <label class="cv_db_custom_file_label btn-success btn" for="input-owner-personal-image"><i class="fas fa-cloud-upload-alt"></i></label>
+                                <input type="file" name="personal-image" id="input-owner-personal-image" data-target="#personal-image-preview" class="cv_db_custom_file_input">
+                              </div><!-- end of custom_file -->
+                            </div><!-- end of col -->
+                          </div><!-- end of row -->
+                          
+                        </div><!-- end of cv_db_card_body -->
+                    </div><!-- end of col6 -->
+                  </div><!-- end of row -->
+                  
+                  <div class="row justify-content-center">
+                    <div class="col-sm-10">
+                        <div class="card-header border-0">
+                          <h6 class="heading-small text-muted mt-0">National ID</h6>
+                        </div><!-- end of card-header -->
+                        <div class="cv_db_card_body card-body text-center">
+                          <img src="../../assets/images/Mamun.jpg" alt="" />
+                          
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <a href="#" class="btn btn-danger cv_db_btn_full text-center" title="Bro"><i class="fas fa-trash-alt"></i></a>
+                            </div><!-- end of col -->
+                            
+                            <div class="col-sm-6">
+                              <div class="cv_db_custom_file">
+                                <label class="cv_db_custom_file_label btn-success btn" for="input-owner-personal-image"><i class="fas fa-cloud-upload-alt"></i></label>
+                                <input type="file" name="personal-image" id="input-owner-personal-image" data-target="#personal-image-preview" class="cv_db_custom_file_input">
+                              </div><!-- end of custom_file -->
+                            </div><!-- end of col -->
+                          </div><!-- end of row -->
+                          
+                        </div><!-- end of cv_db_card_body -->
+                    </div><!-- end of col6 -->
+                  </div><!-- end of row -->
+
+                </div><!-- end of cv_db_setup_card -->
+
+              </div><!-- end of col4 -->
             </div><!-- end of row -->
           </div><!-- end of container-fluid -->
         </section><!-- end of cv_db_setup_general -->
@@ -570,6 +666,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="../assets/js/db_style.js"></script>
+    <script src="../../assets/js/db_style.js"></script>
   </body>
 </html>

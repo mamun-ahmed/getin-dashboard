@@ -235,3 +235,24 @@
     min-height: 50px;
 
 }
+
+/*File Upload*/
+
+.cv_db_custom_file{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+}
+.cv_db_custom_file_label{
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    border-radius: .375rem;
+    box-shadow: none;
+}
+.cv_db_btn_full{max-width: 100%;width: 100%;}
